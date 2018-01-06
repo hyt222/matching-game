@@ -1,7 +1,7 @@
 /*
  * 创建一个包含所有卡片的列表
  */
-let = [
+let cards = [
 	'<li class="card"><i class="fa fa-diamond"></i></li>',
     '<li class="card"><i class="fa fa-paper-plane-o"></i></li>',
     '<li class="card"><i class="fa fa-anchor"></i></li>',
@@ -13,7 +13,7 @@ let = [
     '<li class="card"><i class="fa fa-diamond"></i></li>',
     '<li class="card"><i class="fa fa-bomb"></i></li>',
     '<li class="card"><i class="fa fa-leaf"></i></li>',
-    '<li class="card"><i class="fa fa-bomb"></i></li>'
+    '<li class="card"><i class="fa fa-bomb"></i></li>',
     '<li class="card"><i class="fa fa-bolt"></i></li>',
     '<li class="card"><i class="fa fa-bicycle"></i></li>',
     '<li class="card"><i class="fa fa-paper-plane-o"></i></li>',
@@ -40,7 +40,14 @@ function shuffle(array) {
 
     return array;
 }
+var newCards = shuffle(cards);
 
+
+// TODO:循环遍历每张卡片，创建其 HTML
+for (let i = 0, len = newCards.length; i < len; i++) {
+	let card = $(newCards[i]);
+	$('.deck').append(card);
+}
 
 /*
  * 设置一张卡片的事件监听器。 如果该卡片被点击：
