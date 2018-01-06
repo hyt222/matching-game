@@ -120,7 +120,7 @@ h1 {
  * Styles for the win dialog
  */
 
-.win{
+.win {
     display: none;
     position: absolute;
     background: url(../img/geometry2.png);
@@ -133,7 +133,15 @@ h1 {
     z-index: 1;
 }
 
-.win button{
+.win .totalStar li {
+    list-style: none;
+    color: red;
+    font-size: 50px;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.win button {
     display: block;
     width: 150px;
     height: 50px;
@@ -143,7 +151,7 @@ h1 {
     background-color: #00c5b2;
     border: none;
     border-radius: 10px;
-    margin: 60px auto;
+    margin: 30px auto;
     cursor: pointer;
 }
 

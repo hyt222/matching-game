@@ -76,10 +76,12 @@ function addStep(){
 	steps++;
 	$('.moves').text(steps);
 	if(steps > TWOSTAR){
-		$('.fa-star').first().css('opacity','0');
+		$('.stars .fa-star').first().css('opacity','0');
+		$('.totalStar .fa-star').first().css('opacity','0');
 	}
 	if(steps > ONESTAR){
-		$('.fa-star').eq(1).css('opacity','0');
+		$('.stars .fa-star').eq(1).css('opacity','0');
+		$('.totalStar .fa-star').eq(1).css('opacity','0');
 	}
 }
 
