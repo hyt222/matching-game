@@ -103,7 +103,47 @@ h1 {
     display: inline-block;
 }
 
+.score-panel .stars li i{
+    color: red;
+}
+
+.score-panel span {
+    padding: 0 0 0 30px;
+}
+
 .score-panel .restart {
     float: right;
     cursor: pointer;
 }
+
+/*
+ * Styles for the win dialog
+ */
+
+.win{
+    display: none;
+    position: absolute;
+    background: url(../img/geometry2.png);
+    opacity: 0.9;
+    width: 700px;
+    height: 360px;
+    margin: 40 auto;
+    border-radius: 20px;
+    font-size: 30px;
+    z-index: 1;
+}
+
+.win button{
+    display: block;
+    width: 150px;
+    height: 50px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #00c5b2;
+    border: none;
+    border-radius: 10px;
+    margin: 60px auto;
+    cursor: pointer;
+}
+
