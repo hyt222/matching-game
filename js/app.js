@@ -1,7 +1,24 @@
 /*
  * 创建一个包含所有卡片的列表
  */
-
+let = [
+	'<li class="card"><i class="fa fa-diamond"></i></li>',
+    '<li class="card"><i class="fa fa-paper-plane-o"></i></li>',
+    '<li class="card"><i class="fa fa-anchor"></i></li>',
+    '<li class="card"><i class="fa fa-bolt"></i></li>',
+    '<li class="card"><i class="fa fa-cube"></i></li>',
+    '<li class="card"><i class="fa fa-anchor"></i></li>',
+    '<li class="card"><i class="fa fa-leaf"></i></li>',
+    '<li class="card"><i class="fa fa-bicycle"></i></li>',
+    '<li class="card"><i class="fa fa-diamond"></i></li>',
+    '<li class="card"><i class="fa fa-bomb"></i></li>',
+    '<li class="card"><i class="fa fa-leaf"></i></li>',
+    '<li class="card"><i class="fa fa-bomb"></i></li>'
+    '<li class="card"><i class="fa fa-bolt"></i></li>',
+    '<li class="card"><i class="fa fa-bicycle"></i></li>',
+    '<li class="card"><i class="fa fa-paper-plane-o"></i></li>',
+    '<li class="card"><i class="fa fa-cube"></i></li>'
+];
 /*
  * 显示页面上的卡片
  *   - 使用下面提供的 “shuffle” 方法对列表中的卡片进行洗牌
